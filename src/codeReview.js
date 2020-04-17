@@ -8,7 +8,7 @@ export class GalacticAge {
     this.jupiter = 11.86
   }
 
-  ageCalc(earthAge, planet) {
-    return Math.floor(earthAge / this[{ planet }]);
+  venusCalc(earthAge, ) {
+    return Math.floor(earthAge / this.venus);
   }
 }

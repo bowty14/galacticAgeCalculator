@@ -11,7 +11,7 @@ describe('GalacticAge', () => {
   }); 
   test('ageCalc runs though divsion to determin age on other planets', () => {
     let galacticage = new GalacticAge();
-    expect(galacticage.ageCalc(24, galacticage.venus).toEqual(100));
+    expect(galacticage.venusCalc(24, galacticage.venus)).toEqual(38);
    })
   
 });
