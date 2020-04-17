@@ -27,5 +27,17 @@ export class GalacticAge {
   leMercury(earthAge) {
     return Math.floor(earthAge / this.mercury);
   }
+  // Life expectany on Venus
+  leVenus(earthAge) {
+    return Math.floor(earthAge / this.venus);
+  }
+  // Life expectany on Mars
+  leMars(earthAge) {
+    return Math.floor(earthAge / this.mars);
+  }
+  // Life expectancy on Jupiter
+  leJupiter(earthAge) {
+    return Math.floor(earthAge / this.jupiter);
+  }
   
 }
