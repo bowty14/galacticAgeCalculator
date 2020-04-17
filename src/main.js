@@ -10,9 +10,20 @@ $(document).ready(function () {
 
   $("#enterAge").submit(function (event) {
     event.preventDefault();
-    let inputtedAge = $("#age");
-    let inputtedPlanet = $("#planets")
-    let inputtedLe = $("#LE")
+    let inputtedAge = $("#age").val();
+    let inputtedPlanet = $("#planets").val();
+    let inputtedLe = $("#LE").val();
+
+    if (inputtedPlanet === "Mercury") {
+      return spaceAge.mercuryCal(inputtedAge);
+    } else if (inputtedPlanet === "Venus") {
+      return spaceAge.venusCalc(inputtedAge);
+    } else if (inputtedPlanet === "Mars") {
+      return spaceAge.marsCalc(inputtedAge);
+    } else {
+      return spaceAge.jupiterCalc(inputtedAge);
+    }
+    
     $(".output").show();
-  })
-})
+  });
+});
