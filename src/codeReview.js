@@ -1,15 +1,21 @@
 // Business logic interface
+import { inputtedAge } from '../src/main.js';
+import { inputtedPlanet } from '../src/main.js';
+import { inputtedLE } from '../src/main.js';
 
 export class GalacticAge {
   constructor() {
     this.mercury = .24;
     this.venus = .62;
     this.mars = 1.88;
-    this.jupiter = 11.86
+    this.jupiter = 11.86;
+    this.earthAge = earthAge;
   }
   // Age on Mercury
-  mercuryCalc(earthAge) {
-    return Math.floor(earthAge / this.mercury);
+
+  mercuryCalc() {
+    if (inputtedPlanet === "Mercury")
+    return Math.floor(inputtedAge / this.mercury);
   }
   // Age on Venus
   venusCalc(earthAge) {
@@ -24,8 +30,9 @@ export class GalacticAge {
     return Math.floor(earthAge / this.jupiter);
   }
   // Life expectany on Mercury
-  leMercury(earthAge) {
-    return Math.floor(earthAge / this.mercury);
+  leMercury() {
+    if (inputtedPlanet === "Mercury")
+    return Math.floor(inputtedLE / this.mercury);
   }
   // Life expectany on Venus
   leVenus(earthAge) {
