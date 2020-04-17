@@ -16,6 +16,8 @@ describe('GalacticAge', () => {
     expect(galacticage.marsCalc(24, galacticage.mars)).toEqual(12);
     expect(galacticage.jupiterCalc(24, galacticage.jupiter)).toEqual(2);
   })
-  test('')
+  test('calculate life expectany on mercury', () => {
+    expect(galacticage.leMurcury(102, galacticage.mercury)).toEqual(0);
+  })
   
 });

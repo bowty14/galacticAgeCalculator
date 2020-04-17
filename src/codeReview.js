@@ -7,17 +7,25 @@ export class GalacticAge {
     this.mars = 1.88;
     this.jupiter = 11.86
   }
-  mercuryCalc(earthAge, ) {
+  // Age on Mercury
+  mercuryCalc(earthAge) {
     return Math.floor(earthAge / this.mercury);
   }
-  venusCalc(earthAge, ) {
+  // Age on Venus
+  venusCalc(earthAge) {
     return Math.floor(earthAge / this.venus);
   }
-  marsCalc(earthAge, ) {
+  // Age on Jars
+  marsCalc(earthAge) {
     return Math.floor(earthAge / this.mars);
   }
-  jupiterCalc(earthAge, ) {
+  // Age on Jupiter
+  jupiterCalc(earthAge) {
     return Math.floor(earthAge / this.jupiter);
+  }
+  // Life expectany on Mercury
+  leMercury(earthAge) {
+    return Math.floor(earthAge / this.mercury);
   }
   
 }
