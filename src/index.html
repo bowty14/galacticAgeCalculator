@@ -7,12 +7,14 @@
 </head>
 <body>
   <div class="container">
-    <h1>Intergalactic Age Calculator</h1>
+    <h1 class="animated lightSpeedIn">Intergalactic Age Calculator</h1>
     <form id="enterAge">
       <div class="form-group">
         <label for="ageInput">Please enter your age</label>
-        <input type="number" name="age" id="age">
+        <input type="number" name="age" id="age" placeholder="Enter your age">
         </br></br>
+        <label for="LE">Enter the age you expect to live to and see what that would be on another planet </label>
+        <input type="number" name="LE" id="LE">
         <label for="selectPlanet">Select the planet you'd like to explore</label>
         <select id="planets">
           <option value="Mercury">Mercury</option>
@@ -21,8 +23,6 @@
           <option value="Jupiter">Jupiter</option>
         </select>
         </br></br>
-        <label for="LE">Enter the age you expect to live to and see what that would be on another planet</label>
-        <input type="number" name="LE" id="LE">
         <button class="btn btn-info" type="submit">Blast off!</button>
       </div>
     </form>
