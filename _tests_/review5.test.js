@@ -15,6 +15,7 @@ describe('GalacticAge', () => {
     expect(galacticage.venusCalc(24, galacticage.venus)).toEqual(38);
     expect(galacticage.marsCalc(24, galacticage.mars)).toEqual(12);
     expect(galacticage.jupiterCalc(24, galacticage.jupiter)).toEqual(2);
-   })
+  })
+  test('')
   
 });
