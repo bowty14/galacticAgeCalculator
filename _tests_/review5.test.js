@@ -9,4 +9,9 @@ describe('GalacticAge', () => {
     expect(galacticage.mars).toEqual(1.88);
     expect(galacticage.jupiter).toEqual(11.86);
   }); 
+  test('ageCalc runs though divsion to determin age on other planets', () => {
+    let galacticage = new GalacticAge();
+    expect(galacticage.ageCalc(26, this.venus).toEqual(0));
+   })
+  
 });
