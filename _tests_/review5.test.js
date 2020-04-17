@@ -6,7 +6,7 @@ describe('GalacticAge', () => {
     let galacticage = new GalacticAge();
     expect(galacticage.mercury).toEqual(.24);
     expect(galacticage.venus).toEqual(.62);
-    expext(galacticage.mars).toEqual(1.88);
+    expect(galacticage.mars).toEqual(1.88);
     expect(galacticage.jupiter).toEqual(11.86);
   }); 
 });
