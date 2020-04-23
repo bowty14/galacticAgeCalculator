@@ -57,7 +57,3 @@ describe('GalacticAge', () => {
 
 
 
-// 
-// expect(galacticage.leVenus(102, galacticage.venus)).toEqual(164);
-// expect(galacticage.leMars(102, galacticage.mars)).toEqual(54);
-// expect(galacticage.leJupiter(102, galacticage.jupiter)).toEqual(8);
