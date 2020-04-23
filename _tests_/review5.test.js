@@ -2,12 +2,21 @@ import { GalacticAge} from '../src/codeReview.js';
 
 describe('GalacticAge', () => {
 
-  test('constructor holds planet year value compared to earth year', () => {
+  test('constructor holds Mercury year value compared to earth year', () => {
     let galacticage = new GalacticAge();
-    expect(galacticage.mercury).toEqual(.24);
-    expect(galacticage.venus).toEqual(.62);
-    expect(galacticage.mars).toEqual(1.88);
-    expect(galacticage.jupiter).toEqual(11.86);
+    expect(galacticage.mercury).toEqual(.24)
+  }); 
+  test('constructor holds Venus year value compared to earth year', () => {
+    let galacticage = new GalacticAge();
+    expect(galacticage.venus).toEqual(.62)
+  }); 
+  test('constructor holds Mars year value compared to earth year', () => {
+    let galacticage = new GalacticAge();
+    expect(galacticage.mars).toEqual(1.88)
+  }); 
+  test('constructor holds Jupiter year value compared to earth year', () => {
+    let galacticage = new GalacticAge();
+    expect(galacticage.jupiter).toEqual(11.86)
   }); 
   test('ageCalc runs though divsion to determin age on other planets', () => {
     let galacticage = new GalacticAge();
@@ -25,3 +34,8 @@ describe('GalacticAge', () => {
   })
   
 });
+
+
+
+
+
