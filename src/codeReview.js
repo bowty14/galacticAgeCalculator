@@ -1,7 +1,7 @@
 // Business logic interface
 
 export class GalacticAge {
-  constructor() {
+  constructor(earthAge) {
     this.mercury = .24;
     this.venus = .62;
     this.mars = 1.88;
@@ -9,36 +9,36 @@ export class GalacticAge {
     this.earthAge = earthAge;
   }
   // Age on Mercury
-  mercuryCalc(earthAge) {
-    return Math.floor(earthAge / this.mercury);
+  mercuryCalc() {
+    return Math.floor(this.earthAge / this.mercury);
   }
   // Age on Venus
-  venusCalc(earthAge) {
-    return Math.floor(earthAge / this.venus);
+  venusCalc() {
+    return Math.floor(this.earthAge / this.venus);
   }
   // Age on Jars
-  marsCalc(earthAge) {
-    return Math.floor(earthAge / this.mars);
+  marsCalc() {
+    return Math.floor(this.earthAge / this.mars);
   }
   // Age on Jupiter
-  jupiterCalc(earthAge) {
-    return Math.floor(earthAge / this.jupiter);
+  jupiterCalc() {
+    return Math.floor(this.earthAge / this.jupiter);
   }
   // Life expectany on Mercury
-  leMercury(earthAge) {
-    return Math.floor(earthAge / this.mercury);
+  leMercury() {
+    return Math.floor(this.earthAge / this.mercury);
   }
   // Life expectany on Venus
-  leVenus(earthAge) {
-    return Math.floor(earthAge / this.venus);
+  leVenus() {
+    return Math.floor(this.earthAge / this.venus);
   }
   // Life expectany on Mars
-  leMars(earthAge) {
-    return Math.floor(earthAge / this.mars);
+  leMars() {
+    return Math.floor(this.earthAge / this.mars);
   }
   // Life expectancy on Jupiter
-  leJupiter(earthAge) {
-    return Math.floor(earthAge / this.jupiter);
+  leJupiter() {
+    return Math.floor(this.earthAge / this.jupiter);
   }
   
 }
